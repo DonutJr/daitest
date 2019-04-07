@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   get '/' => 'accounts#index'
   get '/accounts' => 'accounts#index'
 
-  # get '/products/new' => 'products#new'
-  # post '/products' => 'products#create'
+  get '/accounts/new' => 'accounts#new'
+  post '/accounts' => 'accounts#create'
 
 
-  # get '/products/:id' => 'products#show'
+  get '/accounts/:id' => 'accounts#show'
   # # post '/products' => 'orders#create'
 
  
