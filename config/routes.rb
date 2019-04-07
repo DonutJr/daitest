@@ -2,9 +2,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/' => 'accounts#index'
   get '/accounts' => 'accounts#index'
+  post '/accounts/' => 'accounts#create'
+
 
   get '/accounts/new' => 'accounts#new'
-  post '/accounts' => 'accounts#create'
+  post '/accounts/new' => 'accounts#create'
 
 
   get '/accounts/:id' => 'accounts#show'

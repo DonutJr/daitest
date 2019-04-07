@@ -1,1 +1,20 @@
-<h1> Hi Roci my love</h1>
+<h1> Dai Accounts </h1>
+<h2>Your balances</h2>
+<% @accounts.each do |account| %>
+<h3>Address: <%= account.address %></h3>
+<h3>Balance: <%= account.balance %></h3>
+<% end %>
+
+
+<h1>New Address</h1>
+
+<%= form_tag "/accounts/", method: :post do %>
+  
+  <div>
+    Name: <input type="text" name="address">
+
+  </div>
+  
+  <input type="submit" value="Add address">
+
+<% end %>
